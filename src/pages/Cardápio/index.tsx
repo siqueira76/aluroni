@@ -10,6 +10,11 @@ export default function Cardapio() {
                 <Logo/>
                 Aluroni
             </nav>
+            <header className={styles.header}>
+                <div className={styles.header__text}>
+                A casa do código e da massa
+                </div>
+            </header>
         </main>
     )
 }
