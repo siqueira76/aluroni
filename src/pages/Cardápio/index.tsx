@@ -5,12 +5,13 @@ import Buscador from './buscador';
 import { useState } from 'react';
 import Filtros from './filtros';
 import Ordenador from './ordenador';
+import Itens from './itens';
 
 export default function Cardapio() {
     const [busca, setBusca] = useState("");
     const [filtro, setFiltro] = useState<number | null>(null);
-    const [ordenador, setOrdenador] = useState("")
-;
+    const [ordenador, setOrdenador] = useState("");
+    
     return(
         <main>
             <nav className={styles.menu}>
@@ -29,6 +30,7 @@ export default function Cardapio() {
                     <Filtros filtro={filtro} setFiltro={setFiltro}></Filtros>
                     <Ordenador ordenador={ordenador} setOrdenador={setOrdenador}></Ordenador>
                 </div>
+                <Itens></Itens>
             </section>
         </main>
     )
